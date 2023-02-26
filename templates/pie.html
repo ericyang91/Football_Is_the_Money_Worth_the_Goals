@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SOCCER TEAM</title>
+  <title>Pie Chart</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
   <style type = 'text/css'>
@@ -21,23 +21,22 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Market Value and Number of Goals Scored in the Major Football Leagues</h1>
-        <p>Use the interactive pie chart below to explore the dataset</p>
-        <div class ='chartBox'>   
-          <canvas id = 'myChart'></canvas>
-          <div>
-              <canvas id = 'pie_chart'></canvas>
-        </div>
+        <p>Use the interactive pie chart below to explore the dataset</p><br>
         <div class="changeBox">
           <select id = 'List' onchange = 'optionChanged()'>
             <option value ="Market Value">Market Value</option>
             <option value ="Goals Scored">Goals Scored</option>
           </select>
+        </div><br>
+        <div class ='chartBox'>   
+          <canvas id = 'myChart'></canvas>
+          <div>
+              <canvas id = 'pie_chart'></canvas>
         </div>
-      </div>  
+        </div>  
       </div>
     </div> 
   </div>
-
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
