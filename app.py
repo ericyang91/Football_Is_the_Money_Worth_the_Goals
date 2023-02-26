@@ -64,5 +64,9 @@ def chart():
 def pie():
     return render_template('pie.html')
 
+@app.route("/map")
+def map():
+    return render_template('map.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
