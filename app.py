@@ -56,6 +56,10 @@ def jsondata():
 
     return jsonify(all_teams)
 
+@app.route("/chart")
+def chart():
+    return render_template('chart.html')
+
 @app.route("/pie")
 def pie():
     return render_template('pie.html')
